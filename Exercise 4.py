@@ -1,0 +1,20 @@
+# Create a program that asks the user for a number and then prints out a list of all the divisors of that
+# number (If you don't know what a divisor is, it is a number that divides evenly into another number.
+# For example, 13 is a divisor of 26 because 26/13 has no remainder.)
+
+divisors=[]
+num=int(input("Give me a number: "))
+
+# Assign the maximum in RANGE with the input number.
+for i in range(1,num+1):
+    if num%i == 0:
+        divisors.append(i)
+
+# print the set like this to see the members in set format
+print(divisors)
+
+# use FOR again but set the RANGE to be the same number as the length of the set.
+# Then print out each member as FOR goes into the set.
+for o in range(len(divisors)):
+    print(divisors[o])
+
